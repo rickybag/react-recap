@@ -1,0 +1,30 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  .product-item {
+    border: 1px solid lightgray;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    color: white;
+
+    .name {
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .details {
+      .price {
+        font-size: 1.25rem;
+        padding: 1rem;
+      }
+      .quantity {
+        padding: 1rem;
+      }
+    }
+  }
+}
